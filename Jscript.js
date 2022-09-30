@@ -33,7 +33,7 @@ function generatPass(){
 
     password = Math.floor(Math.random());
     document.getElementById("txtresult").value=password;
-gdg
+
 }
 
 
