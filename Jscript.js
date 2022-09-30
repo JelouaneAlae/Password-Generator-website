@@ -15,6 +15,9 @@ function generatPass(){
     if(document.getElementById("checkboxNumber").checked){
         number = true;
     }
+
+
+    
     if(Upper == true){
          lettre += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     }
