@@ -4,39 +4,55 @@ function generatPass(){
     var Upper = false;
     var Symbol = false;
     var number =false;
+    var password ="";
+    var cpt  = 1;
+
     var lettre = "abcdefghijklmnopqrstuvwxyz";
-    var password = ""; 
+    var lettre_Upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    var char_symbol = "!@#$%^&*()";
+    var char_number = "0123456789";
+
+
     if(document.getElementById("checkboxUpper").checked){
         Upper = true;
+        cpt ++;
     }
+
     if(document.getElementById("checkboxSymbol").checked){
         Symbol = true;
+        cpt ++;
     }
+
     if(document.getElementById("checkboxNumber").checked){
         number = true;
+        cpt ++;
     }
 
 
-    
-    if(Upper == true){
-         lettre += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    }
-    if(Symbol == true){
-        lettre +="!@#$%^&*()";
-    }
-    if(Symbol == true){
-        lettre +="0123456789";
+    for (var i = 0; i <lenght/cpt; i++) {
+
+        var r0 = Math.floor(Math.random() *10);
+        password += lettre[r0];
+
+        if(Upper == true){
+            var r = Math.floor(Math.random() *10);
+            password += lettre_Upper[r];
+        }
+
+        if(Symbol == true){
+            var rr = Math.floor(Math.random() *10);
+            password += char_symbol[rr];
+        }
+
+        if(number == true){
+            var rrr = Math.floor(Math.random() *10);
+            password += char_number[rrr];
+        }
     }
 
-    // for (var i =0 ; i < range;i++  ){
-    //     randomNumber= Math.floor(Math.random* lettre) ;
-    //     password += chars.substring(randomNumber, randomNumber +1);
-    // }
-    // document.getElementById("txtresult").value = password;
-
-    password = Math.floor(Math.random());
-    document.getElementById("txtresult").value=password;
-    
+    document.getElementById("txtresult").value = password;
+    // alert(cpt);
+    // alert(lenght+"____"+password);
 }
 
 
