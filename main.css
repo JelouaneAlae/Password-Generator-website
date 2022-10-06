@@ -102,9 +102,6 @@ h1, h2, p, a, span{
 		color: #9099b7;
 	}
 
-.input-container {
-	position: relative;
-}
 	input[type=text]{
 		width: 260px;
 		height: 50px;
@@ -138,15 +135,6 @@ h1, h2, p, a, span{
 		left: 31px;
 		top: 10px;
 	}
-		.input-icon.password-icon {
-			left: 35px;
-		}
-
-.horizontal-list {
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
-}
 	.horizontal-list li {
 		float: left;
 	}
@@ -164,22 +152,15 @@ h1, h2, p, a, span{
 
 
 
-/** MAIN CONTAINER **/
-
-.main-container {
-	font-family: 'Ubuntu', sans-serif;
-	width: 950px;
-	height: 1725px;
-	margin: 6em auto;
-}	
-	/*********************************************** HEADER ***********************************************/
+	
+header{
+	display: flex;
+	width: 100%;
+}
 
 
 
-		.header-menu {
-			font-size: 17px;
-			line-height: 80px;
-		}
+
 			.header-menu li {
 				position: relative;
         		-webkit-transform: translateZ(0); /** To avoid a flash when hover messages **/
@@ -219,40 +200,14 @@ h1, h2, p, a, span{
 						transform: rotate(360deg);
 
 					}
-		.profile-menu {
-			float: right;
-			height: 80px;
-			padding-right: 20px;
-		}
-			.profile-menu p {
-				font-size: 17px;
-				display: inline-block;
-				line-height: 76px;
-				margin: 0;
-				padding-right: 10px;
-			}
-				.profile-menu a {
-					padding-left: 5px;
-				}
-					.profile-menu a:hover {
-						text-decoration: none;
-					}
-			.small-profile-picture {
-				display: inline-block;
-				vertical-align: middle;				
-			}
 	/** CONTAINERS **/
-	.container {
-		float: left;
-		width: 300px;
-	}
-		.block {
-			margin-bottom: 25px;
-			background: #394264;
-			border-radius: 5px;
-			position: absolute;
-			right: 0px;
-		}
+.block {
+	margin-bottom: 25px;
+	background: #394264;
+	border-radius: 5px;
+	position: absolute;
+	right: 0px;
+}
 .main{
     height: 720;
 }
@@ -278,7 +233,6 @@ fieldset{
     margin-top: 40px;
 }
 
-
 #btnGenerate{
     background-color: transparent;
     border-radius: 8px;
@@ -295,9 +249,7 @@ fieldset{
 }
 #btnGenerate:hover{
     background: #50597b;
-    
 }
-
 
 .result > #txtresult{
 	height: 55px;
