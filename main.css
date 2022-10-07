@@ -255,6 +255,8 @@ fieldset{
 	height: 55px;
 	font-size: large;
 	color: white;
+	padding: 2%;
+	text-align: center;
 }
 
 .main  .filter-pass  input[type ="checkbox"] {
@@ -265,4 +267,14 @@ fieldset{
 	height: 1.15em;
 	border: 0.15em solid currentColor;
 	border-radius: 10em;
+}
+
+.filter-pass input[type='checkbox']{
+	color: #e64c65;
+}
+#range-value{
+	width: 6%;
+	text-align:center;
+	padding: 2%;
+	font-size: medium;
 }

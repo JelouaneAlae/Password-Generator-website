@@ -56,4 +56,10 @@ function generatPass(){
 }
 
 
+function Range_value_display(){
+    var x =document.getElementById("range").value;
+    document.getElementById("range-value").value = x;
+}
+
+
 

@@ -17,7 +17,7 @@
                 <header class="block">
                     <ul >
                         <li class="passGenerator">
-                            <a class="header-menu-tab" id="header-menu-tab1" href="#">Password generator</a>
+                            <a class="header-menu-tab" id="header-menu-tab1" href="#" onclick="Range_value_display()">Password generator</a>
                         </li>
                     </ul>
                 
@@ -42,7 +42,8 @@
                 <fieldset class="main-fild">
 
                     <div class="filter-pass">
-                        <label >Password lenght <input type="range" min="8" value="8" max="30" id="range"></label>
+                        <label >Password lenght <input type="range" min="8" value="8" max="30" id="range" onchange="Range_value_display()"><input type="text" id="range-value" value="8"></input></label>
+                        
                         <label >Uppercase<input type="checkbox" id="checkboxUpper"></label>
                         <label >Numbers <input type="checkbox" id="checkboxNumber"></label>
                         <label >Symbols<input type="checkbox" id="checkboxSymbol" ></label>
